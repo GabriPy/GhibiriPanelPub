@@ -13,7 +13,8 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root_33',
-    database: 'ghibiri'
+    database: 'ghibiri',
+    insecureAuth: true
 });
 
 db.connect(err => {
